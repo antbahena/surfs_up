@@ -8,6 +8,7 @@ The purpose of this analysis is to find the data for June temperatures and Decem
 
 
 ## Results
+
 1. Temperature is consistently surfable in June. 
 As the mean is 74.94 degrees compared to December's 71.04 degrees.
 
@@ -21,13 +22,13 @@ As the mean is 74.94 degrees compared to December's 71.04 degrees.
 
 Using the two functions below we can compare the summary stats side by side. One on a general level and the second on a daily level. We can compare the overall days that are surfable at the same time.
 
-##General
+## General
 june_data = june_df.describe()
 dec_data_compare = dec_results_df.describe()
 compare = june_data.merge(dec_data_compare,left_index= True, right_index= True)
 compare
 
-##Daily
+## Daily
 june_data2 = june_df
 dec_data_compare2 = dec_results_df
 compare2 = june_data2.merge(dec_data_compare2,left_index= True, right_index= True)
